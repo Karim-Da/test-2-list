@@ -1,0 +1,41 @@
+@use './color.scss';
+
+.button {
+  background-color: transparent;
+  padding: 12px;
+  border: none;
+
+  transition: 0.15s;
+
+  &:hover {
+    color: color.$bg-white;
+  }
+
+  &:disabled {
+    color: color.$text-secondary;
+
+    &:hover {
+      background-color: transparent;
+    }
+  }
+
+  &-circular {
+    border-radius: 50%;
+  }
+
+  &-blue-500 {
+    color: color.$blue-500;
+
+    &:hover {
+      background-color: color.$blue-500;
+    }
+  }
+
+  &-red-500 {
+    color: color.$red-500;
+
+    &:hover {
+      background-color: color.$red-500;
+    }
+  }
+}

@@ -1,4 +1,6 @@
 @use './color';
+@use './buttons';
+@use './utils';
 
 @import url('//fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
@@ -12,6 +14,7 @@ html,
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 html {
@@ -22,5 +25,16 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
+svg {
+  display: block;
+}
+
 // If you need to style the #app element
 // :global(#app) {}
+
+#app {
+  padding: 65px 20px;
+  min-width: 100vw;
+  min-height: 100vh;
+  background: linear-gradient(180deg, color.$bg-white 0%, color.$bg-gray 100%);
+}

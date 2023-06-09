@@ -1,0 +1,49 @@
+@use './color.scss';
+
+.flex {
+  display: flex;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
+}
+
+.green-500 {
+  color: color.$green-500;
+}
+
+.text-secondary {
+  color: color.$text-secondary;
+}
+
+.mt-5 {
+  margin-top: 0.714rem;
+}
+
+.mt-10 {
+  margin-top: 1.286rem;
+}
+
+.mt-15 {
+  margin-top: 2.357rem;
+}
+
+.mx-auto {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.mr-auto {
+  margin-right: auto;
+}
+
+.px-25 {
+  padding-right: 4.286rem;
+  padding-left: 4.286rem;
+}
+
+.hover-pointer {
+  &:hover {
+    cursor: pointer;
+  }
+}
